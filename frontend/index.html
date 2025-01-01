@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Florina's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <!-- Home Section -->
+  <section id="home">
+    <h1>Hello I'm Florina Ramchiary</h1>
+    <p>A passionate Computer science student at IIT Mandi. I specialize in software development, machine learning, and web development, with hands-on experience in tools like React, Python, and MongoDB.</p>
+    <button id="contact-us-btn">Contact Me</button> 
+   </section> 
+
+  <!-- Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <!-- MongoDB -->
+      <div class="skill-item">
+        <img src="images/mongodb.png" alt="MongoDB">
+        <p>MongoDB</p>
+      </div>
+      <div class="skill-item">
+        <img src="images/c-.png" alt="Flask">
+        <p>C++</p>
+      </div>
+      <!-- Python -->
+      <div class="skill-item">
+        <img src="images/python.png" alt="Python">
+        <p>Python</p>
+      </div>
+      <!-- React -->
+      <div class="skill-item">
+        <img src="images/react.png" alt="React">
+        <p>React</p>
+      </div>
+      <!-- JavaScript -->
+      <div class="skill-item">
+        <img src="images/javascript.png" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+    </div>
+    <a href="Florina_Ramchiary.pdf" download class="download-resume">Download Resume</a>
+  </section>
+  
+
+  <!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Early Stopped Denoising Diffusion Problemastic Model</p>
+        <a href="https://github.com/floramchi/Early-Stopped-Denoising-Diffusion-Problemastic-Model" target="_blank">
+        <button class="btn-github">View on GitHub</button></a>
+      </div>
+  
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Lung Cancer Detection</p>
+        <a href="https://github.com/floramchi/Cancer-Cell-Detection" target="_blank">
+        <button class="btn-github">View on GitHub</button></a>
+      </div>
+  
+      <!-- Project 3 -->
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>Gait Recognition</p>
+        <a href="https://github.com/floramchi/DL_Project" target="_blank">
+        <button class="btn-github">View on GitHub</button></a>
+      </div>
+  
+      <!-- Project 4 -->
+      <div class="project-card">
+        <h3>Project 4</h3>
+        <p>Flask-User-Authentication</p>
+        <a href="https://github.com/floramchi/Flask-User-Authentication" target="_blank">
+        <button class="btn-github">View on GitHub</button></a>
+        <a href="https://flask-user-authentication.onrender.com" target="_blank">
+            <button class="btn-live-demo">Live Demo</button></a>
+      </div>
+    </div>
+  </section>
+  
+
+ <!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <!-- Contact Icons -->
+    <div class="contact-icons">
+        <a href="mailto:florinaramchiary48@gmail.com" class="contact-icon" target="_blank">
+            <i class="fas fa-envelope"></i> <!-- Email Icon -->
+        </a>
+        <a href="https://github.com/floramchi" class="contact-icon" target="_blank">
+            <i class="fab fa-github"></i> <!-- GitHub Icon -->
+        </a>
+        <a href="https://www.linkedin.com/in/florinaramchiary/" class="contact-icon" target="_blank">
+            <i class="fab fa-linkedin"></i> <!-- LinkedIn Icon -->
+        </a>
+    </div>
+</section>
+
+
+  <!-- Chat Icon / Button -->
+<div id="chat-icon" onclick="toggleChatWindow()">
+    💬
+  </div>
+  
+  <!-- Chat Window -->
+  <div id="chat-window" class="hidden">
+    <h3>Chat</h3>
+    <div id="chat-messages" style="height: 150px; overflow-y: auto; border: 1px solid #ddd; padding: 5px;"></div>
+    <div style="display: flex; margin-top: 10px;">
+      <input type="text" id="chat-input" placeholder="Type a message..." style="flex: 1; margin-right: 5px;" />
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
